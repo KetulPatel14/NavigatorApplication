@@ -15,6 +15,8 @@
 		41C5D95C29D1D3810015682A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C5D95A29D1D3810015682A /* LaunchScreen.storyboard */; };
 		41C5D96729D1D3820015682A /* NavigatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5D96629D1D3820015682A /* NavigatorAppTests.swift */; };
 		41C5D97229D1D3820015682A /* NavigatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5D97129D1D3820015682A /* NavigatorAppUITests.swift */; };
+		41C5D98029D1DB950015682A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5D97F29D1DB950015682A /* FormViewController.swift */; };
+		41C5D98229D1DC1B0015682A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5D98129D1DC1B0015682A /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		41C5D96D29D1D3820015682A /* NavigatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C5D97129D1D3820015682A /* NavigatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorAppUITests.swift; sourceTree = "<group>"; };
 		41C5D97329D1D3820015682A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C5D97F29D1DB950015682A /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		41C5D98129D1DC1B0015682A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				41C5D95829D1D3810015682A /* Assets.xcassets */,
 				41C5D95A29D1D3810015682A /* LaunchScreen.storyboard */,
 				41C5D95D29D1D3810015682A /* Info.plist */,
+				41C5D97F29D1DB950015682A /* FormViewController.swift */,
+				41C5D98129D1DC1B0015682A /* InfoViewController.swift */,
 			);
 			path = NavigatorApp;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			files = (
 				41C5D95429D1D3680015682A /* ViewController.swift in Sources */,
 				41C5D95029D1D3680015682A /* AppDelegate.swift in Sources */,
+				41C5D98029D1DB950015682A /* FormViewController.swift in Sources */,
 				41C5D95229D1D3680015682A /* SceneDelegate.swift in Sources */,
+				41C5D98229D1DC1B0015682A /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

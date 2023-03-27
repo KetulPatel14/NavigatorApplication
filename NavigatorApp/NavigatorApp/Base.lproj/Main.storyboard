@@ -17,13 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPM-Ks-grJ">
-                                <rect key="frame" x="124" y="320" width="157" height="129"/>
+                                <rect key="frame" x="124" y="364" width="157" height="85"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="d9h-4R-PEY" kind="show" id="vbH-45-I0s"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk5-hc-Tbw">
-                                <rect key="frame" x="128" y="192" width="149" height="48"/>
+                                <rect key="frame" x="128" y="236" width="149" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -42,6 +45,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPM-Ks-grJ" secondAttribute="trailing" constant="133" id="ud9-ZF-Tiu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jat-wc-XFk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,12 +54,12 @@
         <!--FormViewController-->
         <scene sceneID="9Rh-pc-aKd">
             <objects>
-                <viewController id="d9h-4R-PEY" userLabel="FormViewController" sceneMemberID="viewController">
+                <viewController id="d9h-4R-PEY" userLabel="FormViewController" customClass="FormViewController" customModule="NavigatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kc1-40-TKB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-y0-AnL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-y0-AnL">
                                 <rect key="frame" x="177" y="72" width="60" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -103,6 +107,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rd5-BA-p2l" kind="show" id="hyh-0Z-tba"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JG4-Eg-yPu"/>
@@ -138,15 +145,25 @@
                             <constraint firstItem="3EG-y0-AnL" firstAttribute="leading" secondItem="JG4-Eg-yPu" secondAttribute="leading" constant="177" id="uUm-uo-8YD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2CA-C7-JNU"/>
+                    <connections>
+                        <outlet property="Address" destination="x3y-vg-jzT" id="mVo-Xi-3eB"/>
+                        <outlet property="City" destination="PsF-eo-LOf" id="m2e-Nh-z2b"/>
+                        <outlet property="County" destination="cJu-Oh-Phj" id="XVg-wo-zpE"/>
+                        <outlet property="EmailId" destination="W2b-gU-SSB" id="SZ7-I1-uk9"/>
+                        <outlet property="FirstName" destination="wmZ-X8-QRe" id="8ea-dH-XDb"/>
+                        <outlet property="LastName" destination="wCU-4h-e27" id="FNU-wW-4A7"/>
+                        <outlet property="PostalCode" destination="AQY-nk-Bof" id="U0q-6k-pw7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1G-Z5-Qha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518.84057971014499" y="225.66964285714283"/>
+            <point key="canvasLocation" x="536" y="226"/>
         </scene>
         <!--InfoViewController-->
         <scene sceneID="dd6-KP-xV0">
             <objects>
-                <viewController id="rd5-BA-p2l" userLabel="InfoViewController" sceneMemberID="viewController">
+                <viewController id="rd5-BA-p2l" userLabel="InfoViewController" customClass="InfoViewController" customModule="NavigatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y1C-gJ-IhR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,6 +221,16 @@
                         <viewLayoutGuide key="safeArea" id="f87-0E-Fgg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hg3-iw-bJa"/>
+                    <connections>
+                        <outlet property="Address" destination="LWL-rc-n3M" id="awe-ia-xGh"/>
+                        <outlet property="City" destination="x3p-HC-kjf" id="j9W-vx-Gq3"/>
+                        <outlet property="County" destination="NUc-MC-mdP" id="KAz-Gh-Wlv"/>
+                        <outlet property="EmailId" destination="Dx2-bl-Mn2" id="ENa-K0-etQ"/>
+                        <outlet property="FirstName" destination="RMn-97-CNc" id="qyu-4N-s2I"/>
+                        <outlet property="LastName" destination="NYB-r2-Z9o" id="ROe-7n-iDb"/>
+                        <outlet property="PostalCode" destination="HqX-eg-303" id="XgK-OA-j2d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAU-kw-Ker" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,6 +244,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xiC-2O-4Gm"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEM-C5-hGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
